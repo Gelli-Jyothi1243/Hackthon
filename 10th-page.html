@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .course-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submenu {
+            display: none;
+            width: 100%;
+        }
+
+        .submenu ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submenu li {
+            border: 2px solid black;
+            width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .submenu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="showSubMenu('inter')" style="font-weight: 700;">Inter</a>
+        <a href="#" onclick="showSubMenu('diploma')">Diploma</a>
+    </nav>
+
+    <div class="course-content">
+        <div id="inter" class="submenu">
+            <h2>Inter Courses</h2>
+            <ul>
+                <li onclick="showSubMenu('MPC')">
+                    <h1>MPC</h1>
+                    <p>MPC (Mathematics, Physics, Chemistry) is an academic course typically offered at the intermediate or higher secondary education level.</p>
+                </li>
+                <li onclick="showSubMenu('BiPC')">
+                    <h1>BiPC</h1>
+                    <p>BiPC (Biology, Physics, Chemistry) is an academic course that focuses on the biological and physical sciences.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="diploma" class="submenu">
+            <h2>Diploma Courses</h2>
+            <ul>
+                <li onclick="showSubMenu('Engineering and Technology')">
+                    <h1>Engineering and Technology</h1>
+                    <p>Engineering and Technology provide students with practical and theoretical knowledge in various branches of engineering. </p>
+                </li>
+                <li onclick="showSubMenu('Health and Medical Sciences')">
+                    <h1>Health and Medical Sciences</h1>
+                    <p>Diploma courses in Medical and Allied Sciences provide students with foundational knowledge and practical skills in various healthcare-related disciplines.</p>
+                </li>
+            </ul>
+            <ul>
+                <li onclick="showSubMenu('Business and Management')">
+                    <h1>Business and Management</h1>
+                    <p>A diploma in Business and Management is designed to provide individuals with foundational knowledge and practical skills in various aspects of business and organizational management.</p>
+                </li>
+                <li onclick="showSubMenu('Arts and Humanities')">
+                    <h1>Arts and Humanities</h1>
+                    <p>Diploma courses in Arts and Humanities provide students with a foundational understanding of various disciplines within the arts and humanities.</p>
+                </li>
+            </ul>
+            <h2>Entrance for Emcet </h2>
+            <p>CLick <a href="https://www.sarvgyan.com/articles/ap-ecet-2024">here</a>to register and to know more deatils for ECET Examinations</p>
+        </div>
+    
+        <div id="Engineering and Technology" class="submenu">
+            <header>
+                <h1>Engineering and Technology</h1>
+                <section>
+                    <h2>Diploma in Mechanical Engineering</h2>
+                    <ul>
+                        <li>A Diploma in Mechanical Engineering is a program that focuses on imparting practical and theoretical knowledge in the field of mechanical engineering.</li>
+                        <li>Job roles may include Mechanical Engineer, Maintenance Engineer, Quality Control Engineer, or Production Supervisor.</li>
+                    </ul>
+                <h2>Diploma in Electrical Engineering</h2>
+                <ul>
+                    <li>The Diploma in Electrical Engineering program provides education in electrical systems, electronics, and power systems.</li>
+                    <li>Job roles may include Electrical Engineer, Control Systems Engineer, or Electronics Technician.</li>
+                </ul>
+                <h2>Diploma in Civil Engineering</h2>
+                <ul>
+                    <li>The Diploma in Civil Engineering program focuses on educating students about various aspects of civil construction and infrastructure development.</li>
+                    <li>Job roles may include Civil Engineer, Structural Engineer, or Construction Manager.</li>
+                </ul>
+                <h2>Diploma in Computer Science and Engineering</h2>
+                <ul>
+                    <li>The Diploma in Computer Science and Engineering program provides education in computer hardware, software, and programming.</li>
+                    <li>Job roles may include Software Developer, System Analyst, Network Administrator, or Database Administrator.</li>
+                </ul>
+                </section>
+            </header>
+        </div>
+        <div id="Health and Medical Sciences" class="submenu">
+            <header>
+                <h1>Health and Medical Sciences</h1>
+            </header>
+            <section>
+                <h2>Diploma in Nursing</h2>
+                <ul>
+                    <li>Nursing education focuses on preparing individuals to provide compassionate and skilled healthcare services.</li>
+                    <li>Job roles may include Registered Nurse (RN) or Nurse Practitioner.</li>
+                </ul>
+                <h2>Diploma in Medical Laboratory Technology</h2>
+                <ul>
+                    <li>Medical Laboratory Technology (MLT) is a field that involves performing laboratory tests to aid in the diagnosis, treatment, and prevention of diseases.</li>
+                    <li>Job roles may include Medical Laboratory Technologist or Clinical Laboratory Scientist.</li>
+                </ul>
+                <h2>Diploma in Pharmacy</h2>
+                <ul>    
+                    <li>Pharmacy education involves the study of pharmaceutical sciences and the use of medications for patient care.</li>
+                    <li>Job roles may involve medication management, counseling, and ensuring medication safety.</li>
+                </ul>
+                <h2>Diploma in Radiography</h2>
+                <ul>
+                    <li>Radiography involves the use of medical imaging techniques to create diagnostic images of the human body.</li>
+                    <li>Job roles may include Radiologic Technologist or Radiographer.</li>
+                </ul>
+            </section>
+        </div>
+        <div id="Business and Management" class="submenu">
+            <header>
+                <h1>Business and Management</h1>
+            </header>
+            <section>
+                <h2>Diploma in Business Administration</h2>
+                <ul>
+                    <li>Business Administration programs focus on providing students with a comprehensive understanding of various business functions and principles.</li>
+                    <li>Job roles may include Business Analyst, Marketing Manager, or Operations Manager.</li>
+                </ul>
+                <h2>Diploma in Hotel Management</h2>
+                <ul>
+                    <li>Hotel Management programs are designed to prepare students for careers in the hospitality industry, focusing on hotel and resort operations.</li>
+                    <li>Job roles may include Hotel Manager, Event Coordinator, or Food and Beverage Manager.</li>
+                </ul>
+                <h2>Diploma in Retail Management</h2>
+                <ul>
+                    <li>Retail Management programs focus on the principles and practices involved in managing retail businesses and ensuring customer satisfaction.</li>
+                    <li>Job roles may include Retail Manager, Merchandiser, or Sales Analyst.</li>
+                </ul>
+                <h2>Diploma in Event Management</h2>
+                <ul>
+                    <li>Event Management programs prepare students for planning and executing successful events, ranging from conferences to weddings.</li>
+                    <li>Job roles may include Event Coordinator, Wedding Planner, or Conference Manager.</li>
+                </ul>
+            </section>
+        </div>
+        <div id="Arts and Humanities" class="submenu">
+            <header>
+                <h1>Arts and Humanities</h1>
+            </header>
+            <section>
+                <h2>Diploma in Journalism and Mass Communication</h2>
+                <ul>
+                    <li>The Diploma in Journalism and Mass Communication is a comprehensive program that provides foundational knowledge and practical skills in the fields of journalism and media communication.</li>
+                    <li>Job roles may include News Reporter, Editor, or Multimedia Journalist.</li>
+                </ul>
+                <h2>Diploma in Graphic Design</h2>
+                <ul>
+                    <li>The Diploma in Graphic Design is a specialized program that focuses on developing skills in visual communication, design principles, and the use of various graphic design tools.</li>
+                    <li>Create visual concepts using graphic design tools for various purposes, such as advertising, branding, and marketing.</li>
+                </ul>
+                <h2>Diploma in Performing Arts</h2>
+                <ul>
+                    <li>The Diploma in Performing Arts is a program that provides comprehensive training in various performing arts disciplines, including acting, dance, and music.</li>
+                    <li>The Performing Arts diploma prepares individuals for dynamic careers in stage performance, choreography, and entertainment event management</li>
+                </ul>
+                <h2>Diploma in Languages</h2>
+                <ul>
+                    <li>The Diploma in Languages is a program designed to provide proficiency in a specific language or a combination of languages.</li>
+                    <li>With a Languages diploma, students can pursue diverse roles such as technical translation, tour guiding, language research, and localization management</li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="BiPC" class="submenu" >
+            <header>
+                <h1>BiPC Course Details</h1>
+            </header>
+            <section>
+                <h2>Course Overview</h2>
+                <p>This BiPc course focuses on</p>
+                <h2>Eligibility Criteria</h2>
+                <ul>To be eligible for the BIPC course, students should have completed their 10+2 education with a focus on Biology, Physics, and Chemistry subjects.
+                </ul>
+                <h2>Entry Exams</h2>
+                <p>Entrance exams for BiPC courses may vary, but common ones include:</p>
+                <ul>
+                    <li>JEE Advanced</li>
+                    <li>NEET</li>
+                </ul>
+            </section>
+            <p>Click <a href="https://www.gmrit.org/neet-ug-application-form/">here</a>to register and to know more deatils for JEEMAins Examinations</p>
+            <p>Click <a href="https://www.sarvgyan.com/articles/ap-eamcet-2024">here</a>to register and to know more deatils for EAMCET Examinations</p>
+        </div>
+        <div id="MPC" class="submenu">
+            <header>
+                <h1>MPC Course Details</h1>
+            </header>
+        
+            <section>
+                <h2>Course Overview</h2>
+                <p>This MPC course focuses on Mathematics, Physics, and Chemistry to provide a strong foundation in science and engineering.</p>
+        
+                <h2>Eligibility Criteria</h2>
+                <ul>
+                    <li>Minimum 12th-grade education with a focus on science subjects</li>
+                    <li>Passionate about mathematics and physical sciences</li>
+                    <li>Basic understanding of chemistry concepts</li>
+                </ul>
+        
+                <h2>Entry Exams</h2>
+                <p>Entrance exams for MPC courses may vary, but common ones include:</p>
+                <ul>
+                    <li>JEE Main</li>
+                    <li>JEE Advanced</li>
+                </ul>
+            </section>
+            <p>Click <a href="https://jeemain.nta.ac.in/">here</a>to register and to know more deatils for JEEMAins Examinations</p>
+            <p>Click <a href="https://www.sarvgyan.com/articles/ap-eamcet-2024">here</a>to register and to know more deatils for JEEMAins Examinations</p>
+        </div>
+        
+    
+    <script>
+        showSubMenu('inter');
+
+        function showSubMenu(course) {
+            var submenus = document.getElementsByClassName('submenu');
+            for (var i = 0; i < submenus.length; i++) {
+                submenus[i].style.display = 'none';
+            }
+
+            var selectedSubmenu = document.getElementById(course);
+            selectedSubmenu.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

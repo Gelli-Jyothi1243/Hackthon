@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center; 
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Call the showSubMenu function for 'B.Tech' to display it by default
+            showSubMenu('B.Tech');
+        });
+
+        function showSubMenu(course) {
+            // Hide all submenus
+            var submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(function(submenu) {
+                submenu.style.display = 'none';
+            });
+
+            // Show the selected submenu
+            var selectedSubmenu = document.getElementById(course);
+            if (selectedSubmenu) {
+                selectedSubmenu.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="#" onclick="showSubMenu('B.Tech')">B.Tech</a>
+            <a href="#" onclick="showSubMenu('BArch')">BArch</a>
+            <a href="#" onclick="showSubMenu('B.Sc')">B.Sc</a>
+            <a href="#" onclick="showSubMenu('BCA')">BCA</a>
+        </nav>
+        <div class="course-content" style="position: fixed;">
+            <div id="B.Tech" class="submenu">
+                <h2>B.E/B.Tech Course After 12th MPC</h2>
+                <p>To get into a top college, you have to appear in the following entrance exams like JEE, EAMCETs, BITSAT, VITEEE, etc.</p>
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>Eligibility</th>
+                        <th>Avg. Salary Estimation(INR)</th>
+                        <th>Entrance Exam</th>
+                        <th>Course Duration</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>B.Tech. in Computer Science and Engineering</td>
+                        <td>10+2 with Physics, Chemistry, and Mathematics (PCM)</td>
+                        <td>8-12LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, EAMCETs, etc.</td>
+                        <td>4 years</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech. in Electrical Engineering</td>
+                        <td>10+2 with PCM</td>
+                        <td>6-10LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, etc..</td>
+                        <td>4 years</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech in Electronics and Communication Engineering</td>
+                        <td>10+2 with PCM</td>
+                        <td>6-10LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, etc..</td>
+                        <td>4 years</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech in Mechanical Engineering</td>
+                        <td>10+2 with PCM</td>
+                        <td>6-10LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, etc..</td>
+                        <td>4 years</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech in Civil Engineering</td>
+                        <td>10+2 with PCM</td>
+                        <td>5-8LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, etc..</td>
+                        <td>4 years</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech in Chemical Engineering</td>
+                        <td>10+2 with PCM</td>
+                        <td>6-10LPA</td>
+                        <td>JEE Main, JEE Advanced, BITSAT, VITEEE, etc..</td>
+                        <td>4 years</td>
+                    </tr>         
+                </table>
+            </div>
+            <div id="BArch" class="submenu">
+                <h2>Bachelor of Architecture Course after 12th MPC</h2>
+                <p>Architecture is the art or practice of planning,designing and constructing buildings.Upon completing your 12th standard,you can apply for the 5-year Bachelor of Architecture Course.</p>
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>Eligibility</th>
+                        <th>Avg.Salary Estimation(INR)</th>
+                        <th>Entrance Exam</th>
+                        <th>Course Duration</th>
+                    </tr>
+                    <tr>
+                        <td>B.Arch.</td>
+                        <td>10+2 with PCM</td>
+                        <td>4-12lakhs</td>
+                        <td>JEE(Paper 2),NATA</td>
+                        <td>5 years</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="B.Sc" class="submenu">
+                <h1>BSc Courses after 12th MPC</h1>
+                <p>For those who have a strong inclination towards the sciences,pursuing a Bachelor of Science(B.Sc.)degree is an excellent choice</p>
+                <table >
+                    <tr>
+                        <th>Course</th>
+                        <th>Eligibility</th>
+                        <th>Avg.Salary Estimation(INR)</th>
+                        <th>Entrance Exam</th>
+                        <th>Course Duration</th>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Physics</td>
+                        <td>10+2 with PCM</td>
+                        <td>3-5 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Mathematics</td>
+                        <td>10+2 with Mathematics</td>
+                        <td>3-4 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Chemistry</td>
+                        <td>10+2 with Chemistry</td>
+                        <td>3-5 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Mathematics</td>
+                        <td>10+2 with Mathematics</td>
+                        <td>3-4 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Statistics</td>
+                        <td>10+2 with Mathematics</td>
+                        <td>2.5-4 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Mathematics</td>
+                        <td>10+2 with Mathematics</td>
+                        <td>3-4 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Geology</td>
+                        <td>10+2 with PCM</td>
+                        <td>3-5 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc Acturial Science</td>
+                        <td>10+2 with Mathematics</td>
+                        <td>4-6 LPA</td>
+                        <td>Resp.College Ent.Exam</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="BCA" class="submenu">
+                <h2>BCA Course After 12th MPC</h2>
+                <p>A bachelor's degree in computer application is called a BCA.The field is related to IT and software.You can pursue this 3-year undergraduate course after your 12th standard if you enjoy working with computers.</p>
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>Eligibility</th>
+                        <th>Avg.Salary Estimation(INR)</th>
+                        <th>Entrance Exam</th>
+                        <th>Course Duration</th>
+                    </tr>
+                    <tr>
+                        <td>BCA</td>
+                        <td>10+2 with PCM</td>
+                        <td>3-6 LPA</td>
+                        <td>Resp.College Entrance Exam</td>
+                        <td>3 years</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
